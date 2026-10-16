@@ -1,0 +1,1 @@
+[fixture] Failure screenshot: D:\Sketchplay-Security\sketchplay-qa-agent\test-artifacts\screenshots\FAIL_TC-008_Empty_form_submission_shows_validation_errors_20261006_185836.png

@@ -1,0 +1,1 @@
+[fixture] Failure screenshot: D:\Sketchplay-Security\sketchplay-qa-agent\test-artifacts\screenshots\FAIL_TC-003_Forgot_password_link_navigates_to_password_reset_page_20261005_165345.png

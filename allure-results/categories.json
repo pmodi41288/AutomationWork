@@ -1,0 +1,34 @@
+[
+  {
+    "name": "🔴 Product Defects",
+    "messageRegex": ".*AssertionError.*|.*Expected.*to.*|.*toBeVisible.*|.*toHaveText.*|.*toHaveURL.*",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "⏱ Test Timeouts",
+    "messageRegex": ".*Timeout.*|.*exceeded.*timeout.*|.*waitFor.*",
+    "matchedStatuses": ["failed", "broken"]
+  },
+  {
+    "name": "🔧 Infrastructure Failures",
+    "messageRegex": ".*ECONNREFUSED.*|.*net::ERR.*|.*NS_ERROR.*|.*socket hang up.*",
+    "matchedStatuses": ["failed", "broken"]
+  },
+  {
+    "name": "🔒 Authentication Failures",
+    "messageRegex": ".*login.*|.*auth.*|.*session.*|.*401.*|.*403.*",
+    "matchedStatuses": ["failed", "broken"]
+  },
+  {
+    "name": "⚠ Test Broken — Setup Error",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "⏭ Skipped Tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "✅ Passed",
+    "matchedStatuses": ["passed"]
+  }
+]

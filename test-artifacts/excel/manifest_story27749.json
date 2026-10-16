@@ -1,0 +1,26 @@
+{
+  "storyId": 27749,
+  "storyTitle": "[API] [Roster] Rosters: require birth date, add Graduation Year, keep player ids on re-upload, remove USA Lacrosse #",
+  "generatedAt": "2026-10-13 10:21:29",
+  "generatedBy": "rule-based",
+  "testCaseCount": 3,
+  "excelFilePath": "D:\\Sketchplay-Security\\sketchplay-qa-agent\\test-artifacts\\excel\\TC_Story27749_API_Roster_Rosters_require_birth_date_ad_20261013_102129_015.xlsx",
+  "attachmentUrl": "https://dev.azure.com/mobmaxime/7fcbcd16-73f8-4dc6-b5bb-c474aec310b1/_apis/wit/attachments/9a586ef8-8227-456c-9ef2-1884b78dc728?fileName=TC_Story27749_API_Roster_Rosters_require_birth_date_ad_20261013_102129_015.xlsx",
+  "testCases": [
+    {
+      "id": "TC-001",
+      "type": "Negative",
+      "description": "Check that the feature meets this requirement: A roster file with a row that has no athlete birth date, or a birth date that is not a real date, is rejected. The message names the row and the field. No rows from that file are saved. Manual add without an athlete birth date is rejected. Player self-registration asks for the athlete birth date and requires it. The downloaded default template has an \"Athlete Graduation Year\" column and no \"USA Lacrosse #\" column. Custom templates have \"Athlete Graduation Year\" selected by default and \"USA Lacrosse #\" not selected. A graduation year that is not a 4-digit year is rejected with the row named. A blank graduation year is accepted. GET /tournament/team/rosters/:teamId returns the graduation year for each player that has one. A team uploads a roster, then uploads it again with Replace: every player with the same first name, last name and birth date keeps the same id. A new player gets a new id. A player not in the new file is removed. The same id rule works for Add uploads and for the organizer's upload. A template file downloaded before this change (with \"USA Lacrosse #\", without \"Athlete Graduation Year\") still uploads with no column error. Tested on dev, then released to production."
+    },
+    {
+      "id": "TC-002",
+      "type": "Field-Level Validation",
+      "description": "Check that a required date cannot be left empty."
+    },
+    {
+      "id": "TC-003",
+      "type": "Field-Level Validation",
+      "description": "Check an invalid date value."
+    }
+  ]
+}

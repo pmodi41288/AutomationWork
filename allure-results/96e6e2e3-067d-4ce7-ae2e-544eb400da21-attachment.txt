@@ -1,0 +1,1 @@
+[fixture] Failure screenshot: D:\Sketchplay-Security\sketchplay-qa-agent\test-artifacts\screenshots\FAIL_TC-010_Password_field_input_is_masked_20261006_185924.png

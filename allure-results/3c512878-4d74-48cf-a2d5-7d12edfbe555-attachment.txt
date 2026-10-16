@@ -1,0 +1,1 @@
+[fixture] Failure screenshot: D:\Sketchplay-Security\sketchplay-qa-agent\test-artifacts\screenshots\FAIL_TC-019_Max-length_email_input_is_handled_gracefully_20261005_165617.png

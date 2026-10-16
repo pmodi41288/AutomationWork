@@ -1,0 +1,1 @@
+[fixture] Failure screenshot: D:\Sketchplay-Security\sketchplay-qa-agent\test-artifacts\screenshots\FAIL_TC-002_Login_page_renders_all_required_UI_elements_20261006_185634.png

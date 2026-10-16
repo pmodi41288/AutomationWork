@@ -1,0 +1,181 @@
+{
+  "storyId": 27742,
+  "storyTitle": "Create Unscheduled Game Matchups with Drag-and-Drop Scheduling",
+  "generatedAt": "2026-10-07 17:21:29",
+  "generatedBy": "rule-based",
+  "testCaseCount": 34,
+  "excelFilePath": "D:\\Sketchplay-Security\\sketchplay-qa-agent\\test-artifacts\\excel\\TC_Story27742_Create_Unscheduled_Game_Matchups_with_Dr_20261007_172129_832.xlsx",
+  "attachmentUrl": "https://dev.azure.com/mobmaxime/7fcbcd16-73f8-4dc6-b5bb-c474aec310b1/_apis/wit/attachments/f8b23c5c-5df9-4205-ac01-125421a650a2?fileName=TC_Story27742_Create_Unscheduled_Game_Matchups_with_Dr_20261007_172129_832.xlsx",
+  "testCases": [
+    {
+      "id": "TC-001",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the Create Games action is available under the Schedule Automation dropdown on the Schedule Pool screen."
+    },
+    {
+      "id": "TC-002",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that clicking Create Games generates game matchups without automatically scheduling them."
+    },
+    {
+      "id": "TC-003",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that game matchups are generated for all divisions and pools in a single action."
+    },
+    {
+      "id": "TC-004",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that generated game matchups satisfy the configured Guaranteed Games requirement."
+    },
+    {
+      "id": "TC-005",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that clicking the action button when no games exist generates the required matchups."
+    },
+    {
+      "id": "TC-006",
+      "type": "Negative",
+      "description": "Check that the feature meets this requirement: Verify that clicking the action button after games have been created, without resetting them, opens the existing unscheduled games instead of generating duplicate matchups."
+    },
+    {
+      "id": "TC-007",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the created games have a RESET option."
+    },
+    {
+      "id": "TC-008",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that clicking RESET removes all created games that are still unscheduled."
+    },
+    {
+      "id": "TC-009",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that clicking RESET removes games placed in the scheduler that are still in Unsaved status."
+    },
+    {
+      "id": "TC-010",
+      "type": "Negative",
+      "description": "Check that the feature meets this requirement: Verify that clicking RESET does not remove games already in Draft or Published status from the scheduler."
+    },
+    {
+      "id": "TC-011",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that after RESET, the RESET button changes to CREATE, allowing the admin to generate the matchups again."
+    },
+    {
+      "id": "TC-012",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that newly created matchups appear in the Unscheduled Games list."
+    },
+    {
+      "id": "TC-013",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the Unscheduled Games panel opens automatically after games are created."
+    },
+    {
+      "id": "TC-014",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the Unscheduled Games panel can be manually opened and closed using the available toggle control."
+    },
+    {
+      "id": "TC-015",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the total number of unscheduled games is displayed correctly in the panel header."
+    },
+    {
+      "id": "TC-016",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that each unscheduled game displays both team names and its division/age group."
+    },
+    {
+      "id": "TC-017",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the unscheduled games list can be filtered by division/age group."
+    },
+    {
+      "id": "TC-018",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the unscheduled games list can be filtered by team."
+    },
+    {
+      "id": "TC-019",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the unscheduled games list can be searched by team name."
+    },
+    {
+      "id": "TC-020",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the message \"No games yet\" is displayed when all created games have been reset and no games remain."
+    },
+    {
+      "id": "TC-021",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that the message \"All games are scheduled\" is displayed when all created games have been scheduled."
+    },
+    {
+      "id": "TC-022",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that opening the Unscheduled Games panel on wide screens pushes the scheduler grid aside."
+    },
+    {
+      "id": "TC-023",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that an unscheduled game can be dragged into an empty scheduler cell."
+    },
+    {
+      "id": "TC-024",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that dropping an unscheduled game onto an occupied scheduler cell follows the existing confirmation flow for REPLACE."
+    },
+    {
+      "id": "TC-025",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that confirming the REPLACE action exchanges the positions of the two games."
+    },
+    {
+      "id": "TC-026",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that dropping a scheduled game onto an occupied scheduler cell follows the existing confirmation flow for SWAP or REPLACE, as applicable."
+    },
+    {
+      "id": "TC-027",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that each scheduled game displays an Unschedule (×) control until games are in UNSAVED status."
+    },
+    {
+      "id": "TC-028",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that clicking the Unschedule (×) control removes the game from the scheduler and returns it to the Unscheduled Games list."
+    },
+    {
+      "id": "TC-029",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that both affected scheduler cells display a visible conflict warning when the same team is assigned to two games within the same time slot."
+    },
+    {
+      "id": "TC-030",
+      "type": "Negative",
+      "description": "Check that the feature meets this requirement: Verify that scheduling conflict warnings do not prevent the admin from placing a game in the scheduler."
+    },
+    {
+      "id": "TC-031",
+      "type": "Positive",
+      "description": "Check that the feature meets this requirement: Verify that games placed through drag-and-drop remain in Unsaved status until the schedule is drafted or published."
+    },
+    {
+      "id": "TC-032",
+      "type": "Edge Case",
+      "description": "Check what happens when there are no matching results."
+    },
+    {
+      "id": "TC-033",
+      "type": "Field-Level Validation",
+      "description": "Check search behavior when the search box is empty."
+    },
+    {
+      "id": "TC-034",
+      "type": "Edge Case",
+      "description": "Cancel replacing a game in an occupied scheduler cell."
+    }
+  ]
+}

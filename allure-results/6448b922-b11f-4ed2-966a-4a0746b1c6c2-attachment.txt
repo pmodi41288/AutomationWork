@@ -1,0 +1,4 @@
+Message: TypeError: this.page.waitFor is not a function
+Stack:   TypeError: this.page.waitFor is not a function
+    at LoginPage.waitForPageLoad (D:\Sketchplay-Security\sketchplay-qa-agent\src\pages\BasePage.ts:103:23)
+    at D:\Sketchplay-Security\sketchplay-qa-agent\src\pages\LoginPage.ts:121:7

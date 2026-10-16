@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment — never commit real secrets
+.env
+
+# Auth state files (contain session cookies/tokens)
+.auth/
+
+# Test artifacts
+test-artifacts/screenshots/
+test-artifacts/videos/
+test-artifacts/playwright-output/
+
+# Allure
+allure-results/
+allure-report/
+
+# Playwright HTML report
+playwright-report/
+
+# Excel outputs
+test-artifacts/excel/*.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

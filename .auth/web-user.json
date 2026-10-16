@@ -1,0 +1,22 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://web.sketchplayqa.com",
+      "localStorage": [
+        {
+          "name": "lastPlayedVideo",
+          "value": "https://storage.googleapis.com/sketchplay/Drone_Shot_of_Youth_Flag_Football_Practice.mp4"
+        },
+        {
+          "name": "initialRender",
+          "value": "1"
+        },
+        {
+          "name": "data-mode",
+          "value": "dark"
+        }
+      ]
+    }
+  ]
+}

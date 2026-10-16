@@ -1,0 +1,26 @@
+{
+  "storyId": 27748,
+  "storyTitle": "[API] [Security] Add login checks to roster routes and stop showing parent contact details",
+  "generatedAt": "2026-10-13 10:22:45",
+  "generatedBy": "rule-based",
+  "testCaseCount": 3,
+  "excelFilePath": "D:\\Sketchplay-Security\\sketchplay-qa-agent\\test-artifacts\\excel\\TC_Story27748_API_Security_Add_login_checks_to_roster__20261013_102245_836.xlsx",
+  "attachmentUrl": "https://dev.azure.com/mobmaxime/7fcbcd16-73f8-4dc6-b5bb-c474aec310b1/_apis/wit/attachments/d3e58d57-6535-4337-b47a-5bdd5c55d4d2?fileName=TC_Story27748_API_Security_Add_login_checks_to_roster__20261013_102245_836.xlsx",
+  "testCases": [
+    {
+      "id": "TC-001",
+      "type": "Negative",
+      "description": "Check that the feature meets this requirement: PATCH /tournament/update/register/team/roster/{plain number id} with no login returns an error (400 or 404) and changes nothing. The Team Management page (emailed hashed link) can still upload, replace and add to a roster. GET /tournament/roster/information/{teamId} returns no parent email, no parent phone and no other contact field. A list of every route without a login check is attached to this story. Each route is marked \"public on purpose\" (with the reason) or \"must need login\". Every route marked \"must need login\" returns 401 when called without a login token. GET /tournament/team/rosters/{teamId} with a login from a different organization returns 403. With a login from the same organization, or a superAdmin or sketchplayStaff login, it still works. Everything in \"Do not break\" is checked on dev and still works. Released to production. Checks 1, 3, 5 and 6 are repeated on production and pass."
+    },
+    {
+      "id": "TC-002",
+      "type": "Field-Level Validation",
+      "description": "Check an invalid email address value."
+    },
+    {
+      "id": "TC-003",
+      "type": "Field-Level Validation",
+      "description": "Check an invalid phone number value."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "sketchplay-qa-agent",
+  "version": "1.0.0",
+  "description": "Enterprise-grade autonomous Playwright QA Agent with Azure DevOps integration, self-healing locators, and Allure reporting",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "install:browsers": "playwright install --with-deps chromium firefox webkit",
+
+    "analyze:story": "ts-node -r tsconfig-paths/register scripts/analyzeStory.ts",
+    "run:story": "ts-node -r tsconfig-paths/register scripts/runStory.ts",
+
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+
+    "test:login": "playwright test tests/login/",
+    "test:dashboard": "playwright test tests/dashboard/",
+    "test:auth": "playwright test tests/auth/",
+
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+
+    "test:ci": "playwright test --reporter=allure-playwright,line",
+    "test:unit": "node --test -r ts-node/register src/agents/*.test.ts",
+
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:serve": "allure serve allure-results",
+    "allure:report": "npm run allure:generate && npm run allure:open",
+
+    "clean": "rimraf allure-results allure-report test-artifacts/screenshots/* test-artifacts/videos/* playwright-report",
+    "clean:auth": "rimraf .auth",
+    "clean:all": "npm run clean && npm run clean:auth",
+
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "1.7.7",
+    "exceljs": "4.4.0",
+    "form-data": "4.0.1",
+    "openai": "4.67.3",
+    "dotenv": "16.4.5",
+    "chalk": "4.1.2",
+    "dayjs": "1.11.13"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.48.0",
+    "allure-playwright": "3.0.0-beta.6",
+    "allure-js-commons": "3.0.0-beta.6",
+    "@types/node": "22.7.5",
+    "typescript": "5.6.3",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "rimraf": "6.0.1",
+    "@typescript-eslint/eslint-plugin": "8.8.1",
+    "@typescript-eslint/parser": "8.8.1",
+    "eslint": "9.12.0"
+  }
+}

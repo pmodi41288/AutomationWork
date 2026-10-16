@@ -1,0 +1,541 @@
+{
+  "storyId": 27582,
+  "storyTitle": "Admin – Team Ranking page (opened from Manage Registrations)",
+  "generatedAt": "2026-10-02 14:32:44",
+  "generatedBy": "rule-based",
+  "testCaseCount": 106,
+  "excelFilePath": "D:\\Sketrchplay-Security\\sketchplay-qa-agent\\test-artifacts\\excel\\TC_Story27582_Admin_Team_Ranking_page_opened_from_Mana_20261002_143244.xlsx",
+  "attachmentUrl": "https://dev.azure.com/mobmaxime/7fcbcd16-73f8-4dc6-b5bb-c474aec310b1/_apis/wit/attachments/37fe0dfd-2ec5-41d8-9521-06aea9f036df?fileName=TC_Story27582_Admin_Team_Ranking_page_opened_from_Mana_20261002_143244.xlsx",
+  "testCases": [
+    {
+      "id": "TC-001",
+      "type": "Positive",
+      "description": "Verify: ### 1. Opening the page"
+    },
+    {
+      "id": "TC-002",
+      "type": "Positive",
+      "description": "Verify state persists after navigation away and back"
+    },
+    {
+      "id": "TC-003",
+      "type": "Positive",
+      "description": "Verify: Both **created** and **registered** teams are listed."
+    },
+    {
+      "id": "TC-004",
+      "type": "Positive",
+      "description": "Verify: On opening, \"All divisions\" is selected and every division with teams is shown."
+    },
+    {
+      "id": "TC-005",
+      "type": "Positive",
+      "description": "Verify: Ranked teams appear first in rank order"
+    },
+    {
+      "id": "TC-006",
+      "type": "Positive",
+      "description": "Verify: unranked teams appear below them."
+    },
+    {
+      "id": "TC-007",
+      "type": "Positive",
+      "description": "Verify: Each division heading shows how many teams are ranked, e.g. \"3 of 5 ranked\"."
+    },
+    {
+      "id": "TC-008",
+      "type": "Positive",
+      "description": "Verify: Division headings stay visible while scrolling through that division's teams."
+    },
+    {
+      "id": "TC-009",
+      "type": "Positive",
+      "description": "Verify: Each division can be collapsed and expanded by clicking its heading."
+    },
+    {
+      "id": "TC-010",
+      "type": "Positive",
+      "description": "Verify: ### 2. Filtering"
+    },
+    {
+      "id": "TC-011",
+      "type": "Positive",
+      "description": "Verify: Clicking \"All divisions\" clears any specific selection."
+    },
+    {
+      "id": "TC-012",
+      "type": "Positive",
+      "description": "Verify: The admin can select one or several divisions at once"
+    },
+    {
+      "id": "TC-013",
+      "type": "Positive",
+      "description": "Verify: only those divisions are shown."
+    },
+    {
+      "id": "TC-014",
+      "type": "Positive",
+      "description": "Verify: Selecting every individual division is treated as \"All divisions\"."
+    },
+    {
+      "id": "TC-015",
+      "type": "Positive",
+      "description": "Verify: The search box filters teams by name as the admin types, not case-sensitive."
+    },
+    {
+      "id": "TC-016",
+      "type": "Positive",
+      "description": "Verify: Filters and search only change what is visible"
+    },
+    {
+      "id": "TC-017",
+      "type": "Positive",
+      "description": "Verify: they never change any rank."
+    },
+    {
+      "id": "TC-018",
+      "type": "Positive",
+      "description": "Verify: If nothing matches, show \"No teams match. Adjust the division or search filters.\""
+    },
+    {
+      "id": "TC-019",
+      "type": "Positive",
+      "description": "Verify: ### 3. Setting a rank by typing"
+    },
+    {
+      "id": "TC-020",
+      "type": "Positive",
+      "description": "Verify: Admin types a whole number and presses Enter or clicks away."
+    },
+    {
+      "id": "TC-021",
+      "type": "Positive",
+      "description": "Verify: Pressing Enter moves the cursor to the next team's rank box."
+    },
+    {
+      "id": "TC-022",
+      "type": "Positive",
+      "description": "Verify: If the rank is already used by another team in the same division, the team takes that position and teams below it move d"
+    },
+    {
+      "id": "TC-023",
+      "type": "Positive",
+      "description": "Verify: Clearing the box makes the team unranked."
+    },
+    {
+      "id": "TC-024",
+      "type": "Positive",
+      "description": "Verify: Ranks are independent per division (two divisions can each have a rank 1)."
+    },
+    {
+      "id": "TC-025",
+      "type": "Positive",
+      "description": "Verify: ### 4. Drag and drop and arrows"
+    },
+    {
+      "id": "TC-026",
+      "type": "Positive",
+      "description": "Verify: Admin can drag a team onto another team in the same division. Dropping into a different division is not allowed."
+    },
+    {
+      "id": "TC-027",
+      "type": "Positive",
+      "description": "Verify: Up/down arrows move a team one position."
+    },
+    {
+      "id": "TC-028",
+      "type": "Positive",
+      "description": "Verify: After any move, ranks in that division renumber automatically (1, 2, 3...) with no gaps."
+    },
+    {
+      "id": "TC-029",
+      "type": "Positive",
+      "description": "Verify: The top team cannot move up"
+    },
+    {
+      "id": "TC-030",
+      "type": "Positive",
+      "description": "Verify: the bottom team cannot move down."
+    },
+    {
+      "id": "TC-031",
+      "type": "Positive",
+      "description": "Verify: Moving an unranked team into the ranked area makes it ranked."
+    },
+    {
+      "id": "TC-032",
+      "type": "Positive",
+      "description": "Verify: ### 5. Auto-assign toggle for new teams"
+    },
+    {
+      "id": "TC-033",
+      "type": "Positive",
+      "description": "Verify: Toggle is **off** by default."
+    },
+    {
+      "id": "TC-034",
+      "type": "Positive",
+      "description": "Verify: When **on**, a newly added team is ranked automatically in its own division:"
+    },
+    {
+      "id": "TC-035",
+      "type": "Positive",
+      "description": "Verify: **Add at bottom:** next number after the highest rank in that division."
+    },
+    {
+      "id": "TC-036",
+      "type": "Positive",
+      "description": "Verify: **Add at top:** rank 1, and all other ranked teams in that division move down by one."
+    },
+    {
+      "id": "TC-037",
+      "type": "Positive",
+      "description": "Verify: When **off**, the new team appears in its division with no rank."
+    },
+    {
+      "id": "TC-038",
+      "type": "Positive",
+      "description": "Verify: An auto-ranked team shows a small **Auto** tag until the admin saves."
+    },
+    {
+      "id": "TC-039",
+      "type": "Positive",
+      "description": "Verify: A confirmation message appears, e.g. \"Cedar Vipers added to U14 Boys with rank 4.\""
+    },
+    {
+      "id": "TC-040",
+      "type": "Positive",
+      "description": "Verify: ### 6. Clear ranks"
+    },
+    {
+      "id": "TC-041",
+      "type": "Positive",
+      "description": "Verify: Clears ranks only for teams currently visible under the chosen division filters and search."
+    },
+    {
+      "id": "TC-042",
+      "type": "Positive",
+      "description": "Verify: Shows how many were cleared, e.g. \"Cleared 5 ranks\", with an **Undo** link."
+    },
+    {
+      "id": "TC-043",
+      "type": "Positive",
+      "description": "Verify: ### 7. Undo"
+    },
+    {
+      "id": "TC-044",
+      "type": "Positive",
+      "description": "Verify: Every change (typing a rank, moving, clearing, adding an auto-ranked team, discarding) shows a message with an **Undo** "
+    },
+    {
+      "id": "TC-045",
+      "type": "Positive",
+      "description": "Verify: Undo steps back through up to 30 earlier changes in the current session."
+    },
+    {
+      "id": "TC-046",
+      "type": "Positive",
+      "description": "Verify: ### 8. Saving and discarding"
+    },
+    {
+      "id": "TC-047",
+      "type": "Positive",
+      "description": "Verify: The unsaved changes bar appears as soon as anything differs from the last saved state and shows the number of teams chan"
+    },
+    {
+      "id": "TC-048",
+      "type": "Positive",
+      "description": "Verify: **Save rankings** stores ranks for all teams, shows \"Rankings saved\", hides the bar and removes Auto tags."
+    },
+    {
+      "id": "TC-049",
+      "type": "Positive",
+      "description": "Verify: **Discard** returns everything to the last saved state and can itself be undone."
+    },
+    {
+      "id": "TC-050",
+      "type": "Positive",
+      "description": "Verify: Saving is blocked if any division has two teams with the same rank, naming the divisions."
+    },
+    {
+      "id": "TC-051",
+      "type": "Positive",
+      "description": "Verify: ### 9. Entry point"
+    },
+    {
+      "id": "TC-052",
+      "type": "Positive",
+      "description": "Verify: The **Ranking** button appears on the **Manage Registrations** and **Tournament Manage** screen for admins only and open"
+    },
+    {
+      "id": "TC-053",
+      "type": "Positive",
+      "description": "Verify: ### 10. Create Pool – Use Ranking"
+    },
+    {
+      "id": "TC-054",
+      "type": "Positive",
+      "description": "Verify: In **Create Pool**, the existing **Auto Generate Pool** functionality remains available."
+    },
+    {
+      "id": "TC-055",
+      "type": "Positive",
+      "description": "Verify: A checkbox labeled **\"Use ranking to add teams to pools\"** is displayed with the existing **Number of teams per pool** i"
+    },
+    {
+      "id": "TC-056",
+      "type": "Positive",
+      "description": "Verify: The checkbox is **unchecked by default**."
+    },
+    {
+      "id": "TC-057",
+      "type": "Positive",
+      "description": "Verify: When the checkbox is unchecked, clicking **Auto Generate Pool** follows the existing pool-generation workflow and does n"
+    },
+    {
+      "id": "TC-058",
+      "type": "Positive",
+      "description": "Verify: When the checkbox is selected, clicking **Auto Generate Pool** uses the saved rankings of teams in the selected division"
+    },
+    {
+      "id": "TC-059",
+      "type": "Positive",
+      "description": "Verify: The **Number of teams per pool** value determines how many teams are required in each generated pool."
+    },
+    {
+      "id": "TC-060",
+      "type": "Positive",
+      "description": "Verify: Ranked teams are considered in rank order, starting with rank 1."
+    },
+    {
+      "id": "TC-061",
+      "type": "Positive",
+      "description": "Verify: Ranked teams are selected before unranked teams."
+    },
+    {
+      "id": "TC-062",
+      "type": "Positive",
+      "description": "Verify: The selected ranked teams are distributed into pools using the existing pool distribution logic."
+    },
+    {
+      "id": "TC-063",
+      "type": "Positive",
+      "description": "Verify: Team rankings are not changed when pools are generated."
+    },
+    {
+      "id": "TC-064",
+      "type": "Positive",
+      "description": "Verify: Generating pools does not assign ranks to previously unranked teams."
+    },
+    {
+      "id": "TC-065",
+      "type": "Positive",
+      "description": "Verify: ### 11. Create Pool – Ranked and unranked teams"
+    },
+    {
+      "id": "TC-066",
+      "type": "Positive",
+      "description": "Verify: If all teams in the selected division are ranked, the system selects teams according to their rank until the required po"
+    },
+    {
+      "id": "TC-067",
+      "type": "Positive",
+      "description": "Verify: If some teams are ranked and some are unranked, all applicable ranked teams are considered first in rank order."
+    },
+    {
+      "id": "TC-068",
+      "type": "Positive",
+      "description": "Verify: If the ranked teams do not provide enough teams to fill the required pool positions, the remaining positions are filled "
+    },
+    {
+      "id": "TC-069",
+      "type": "Positive",
+      "description": "Verify: Unranked teams are not assigned an artificial rank during pool generation."
+    },
+    {
+      "id": "TC-070",
+      "type": "Positive",
+      "description": "Verify: If there are not enough total teams to fill the configured pool positions, the existing behavior for insufficient teams "
+    },
+    {
+      "id": "TC-071",
+      "type": "Positive",
+      "description": "Verify: ### 12. Create Pool – Division handling"
+    },
+    {
+      "id": "TC-072",
+      "type": "Positive",
+      "description": "Verify: Rankings are considered only within the division selected in **Create Pool**."
+    },
+    {
+      "id": "TC-073",
+      "type": "Positive",
+      "description": "Verify: A team's rank in one division has no effect on teams in another division."
+    },
+    {
+      "id": "TC-074",
+      "type": "Positive",
+      "description": "Verify: Rank 1 in one division and rank 1 in another division are treated independently."
+    },
+    {
+      "id": "TC-075",
+      "type": "Positive",
+      "description": "Verify: If **All divisions** or multiple divisions are supported by the existing Create Pool flow, ranking is evaluated separate"
+    },
+    {
+      "id": "TC-076",
+      "type": "Positive",
+      "description": "Verify: Teams from different divisions are not mixed as a result of ranking-based selection unless the existing pool-generation "
+    },
+    {
+      "id": "TC-077",
+      "type": "Positive",
+      "description": "Verify: ### 13. Create Pool – Saved ranking requirement"
+    },
+    {
+      "id": "TC-078",
+      "type": "Positive",
+      "description": "Verify: If the admin changes rankings but has not saved them, the unsaved ranking changes are not used by **Auto Generate Pool**"
+    },
+    {
+      "id": "TC-079",
+      "type": "Positive",
+      "description": "Verify: The system uses the last saved ranking state when generating pools."
+    },
+    {
+      "id": "TC-080",
+      "type": "Positive",
+      "description": "Verify: After rankings are saved, the updated rankings are available for the next ranking-based pool generation."
+    },
+    {
+      "id": "TC-081",
+      "type": "Positive",
+      "description": "Happy path — primary workflow for Story #27582"
+    },
+    {
+      "id": "TC-082",
+      "type": "Negative",
+      "description": "Access feature without authentication"
+    },
+    {
+      "id": "TC-083",
+      "type": "Negative",
+      "description": "Submit form with all fields empty"
+    },
+    {
+      "id": "TC-084",
+      "type": "Negative",
+      "description": "Submit form with invalid data types"
+    },
+    {
+      "id": "TC-085",
+      "type": "Negative",
+      "description": "Attempt action with insufficient permissions"
+    },
+    {
+      "id": "TC-086",
+      "type": "Negative",
+      "description": "Network interruption during submission"
+    },
+    {
+      "id": "TC-087",
+      "type": "Negative",
+      "description": "Browser back button after submission"
+    },
+    {
+      "id": "TC-088",
+      "type": "Negative",
+      "description": "Concurrent session conflict"
+    },
+    {
+      "id": "TC-089",
+      "type": "Field-Level Validation",
+      "description": "Required text field — empty submission"
+    },
+    {
+      "id": "TC-090",
+      "type": "Field-Level Validation",
+      "description": "Text field — exceeds maximum character limit"
+    },
+    {
+      "id": "TC-091",
+      "type": "Field-Level Validation",
+      "description": "Text field — single character (minimum boundary)"
+    },
+    {
+      "id": "TC-092",
+      "type": "Field-Level Validation",
+      "description": "Email field — invalid format"
+    },
+    {
+      "id": "TC-093",
+      "type": "Field-Level Validation",
+      "description": "Email field — valid format accepted"
+    },
+    {
+      "id": "TC-094",
+      "type": "Field-Level Validation",
+      "description": "Numeric field — non-numeric input"
+    },
+    {
+      "id": "TC-095",
+      "type": "Field-Level Validation",
+      "description": "Numeric field — negative value (if not allowed)"
+    },
+    {
+      "id": "TC-096",
+      "type": "Field-Level Validation",
+      "description": "Text field — SQL injection attempt"
+    },
+    {
+      "id": "TC-097",
+      "type": "Field-Level Validation",
+      "description": "Text field — XSS injection attempt"
+    },
+    {
+      "id": "TC-098",
+      "type": "Field-Level Validation",
+      "description": "Text field — whitespace-only input"
+    },
+    {
+      "id": "TC-099",
+      "type": "Field-Level Validation",
+      "description": "Text field — special characters and unicode"
+    },
+    {
+      "id": "TC-100",
+      "type": "Field-Level Validation",
+      "description": "Date field — past date where future is required"
+    },
+    {
+      "id": "TC-101",
+      "type": "Field-Level Validation",
+      "description": "Date field — invalid date format"
+    },
+    {
+      "id": "TC-102",
+      "type": "Field-Level Validation",
+      "description": "Dropdown/select — no option selected"
+    },
+    {
+      "id": "TC-103",
+      "type": "Field-Level Validation",
+      "description": "File upload — file exceeds size limit"
+    },
+    {
+      "id": "TC-104",
+      "type": "Field-Level Validation",
+      "description": "File upload — unsupported file type"
+    },
+    {
+      "id": "TC-105",
+      "type": "Field-Level Validation",
+      "description": "Password field — below minimum length"
+    },
+    {
+      "id": "TC-106",
+      "type": "Field-Level Validation",
+      "description": "Password field — meets complexity requirements"
+    }
+  ]
+}

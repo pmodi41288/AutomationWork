@@ -1,0 +1,170 @@
+
+[global-setup] ═══ Starting global setup ═══
+[global-setup] Allure environment.properties written.
+[global-setup] Authenticating web portal…
+{
+  "config": {
+    "configFile": "D:\\Sketrchplay-Security\\sketchplay-qa-agent\\playwright.config.ts",
+    "rootDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "D:\\Sketrchplay-Security\\sketchplay-qa-agent\\src\\setup\\global-setup.ts",
+    "globalTeardown": "D:\\Sketrchplay-Security\\sketchplay-qa-agent\\src\\setup\\global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "web:auth-setup",
+        "name": "web:auth-setup",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/auth/web.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "mothership:auth-setup",
+        "name": "mothership:auth-setup",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/auth/mothership.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "mothership",
+        "name": "mothership",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/mothership/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/test-artifacts/playwright-output",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {},
+        "id": "login-tests",
+        "name": "login-tests",
+        "testDir": "D:/Sketrchplay-Security/sketchplay-qa-agent/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/login/**/*.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Mobmaxime\\AppData\\Local\\ms-playwright\\chromium-1140\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝",
+      "stack": "Error: browserType.launch: Executable doesn't exist at C:\\Users\\Mobmaxime\\AppData\\Local\\ms-playwright\\chromium-1140\\chrome-win\\chrome.exe\n╔═════════════════════════════════════════════════════════════════════════╗\n║ Looks like Playwright Test or Playwright was just installed or updated. ║\n║ Please run the following command to download new browsers:              ║\n║                                                                         ║\n║     npx playwright install                                              ║\n║                                                                         ║\n║ <3 Playwright Team                                                      ║\n╚═════════════════════════════════════════════════════════════════════════╝\n    at authenticateWeb (D:\\Sketrchplay-Security\\sketchplay-qa-agent\\src\\setup\\global-setup.ts:90:34)\n    at globalSetup (D:\\Sketrchplay-Security\\sketchplay-qa-agent\\src\\setup\\global-setup.ts:262:9)",
+      "location": {
+        "file": "D:\\Sketrchplay-Security\\sketchplay-qa-agent\\src\\setup\\global-setup.ts",
+        "column": 34,
+        "line": 90
+      },
+      "snippet": "   at ..\\src\\setup\\global-setup.ts:90\n\n\u001b[0m \u001b[90m 88 |\u001b[39m   console\u001b[33m.\u001b[39mlog(\u001b[32m'[global-setup] Authenticating web portal…'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 90 |\u001b[39m   \u001b[36mconst\u001b[39m browser \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m chromium\u001b[33m.\u001b[39mlaunch({ headless\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 91 |\u001b[39m   \u001b[36mconst\u001b[39m context \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m browser\u001b[33m.\u001b[39mnewContext()\u001b[33m;\u001b[39m\n \u001b[90m 92 |\u001b[39m   \u001b[36mconst\u001b[39m page    \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m context\u001b[33m.\u001b[39mnewPage()\u001b[33m;\u001b[39m\n \u001b[90m 93 |\u001b[39m\u001b[0m"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-02T04:31:36.481Z",
+    "duration": 165.06700000000092,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
